@@ -3,9 +3,10 @@ let bodyParser = require('body-parser')
 let request = require('request')
 let app = express()
 
-const FACEBOOK_ACCESS_TOKEN = 'Your_Facebook_Access_Token'
+const FACEBOOK_ACCESS_TOKEN = 'EAARXdw02V3EBAEZBFS0BYNOP4i3Ta6YQqZCvChVDmxqVJ6nGcusqtNoTSq9x1NwCsh4ZBbqo191ZBWtBiWhf8tEYFqQdXZCr2HzcySFibBOUQsXiDOc7LAdLbh1q9K508QzgfFEaGGRJiIJ1fwPI17Tt1fCGkPbUGysoK1CLDZCAZDZD'
 const PORT = process.env.PORT || 3000
-const VERIFY_TOKEN = 'Your_Verify_Token'
+const VERIFY_TOKEN = 'chatbot92_Verify_Token' 
+//這個Token，主要是訊息回傳時，自己設定的fb驗證碼，可以改成自己知道的，此次用跟老師的一樣
 
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
